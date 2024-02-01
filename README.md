@@ -170,6 +170,7 @@ and 𝑇𝑖 (right column) in Figure 5 over a range of hourly values,
 𝑡 = [3, 6, 12, 24]. In this simulation we only consider demand for
 heating with the same starting setpoint and desired thermostat
 setpoint of 𝑇𝑖 = 15◦𝐶 and 𝑇𝑎 = 20◦𝐶, respectively.
+
 At the third hour (𝑡 = 3) we first see divergence occurring with
 the probability distribution of 𝑇𝑎 = 10. This causes the 𝑇𝑖 distribu-
 tion for that value of 𝑇𝑎 to be slightly behind the others in reaching
@@ -182,6 +183,7 @@ in their state distributions within these early hours. When reaching
 𝑇𝑎 = −15◦𝐶 along with 𝑇𝑎 = 10◦𝐶. Both states appear to be further
 away from reaching the equilibrium state than the progress being
 made by more moderate temperatures.
+
 Looking at the plots for 𝑡 = 24 within Figure 5 we see that the
 coldest temperature simulation remains slightly behind the others
 in reaching a steady state equilibrium for 𝑇𝑖 , while also seeing a
@@ -199,7 +201,7 @@ effect that occurs to avoid overshooting the desired setpoint, 𝑇𝑠𝑒𝑡
 and the lack of thermal inertia that this state possesses relative to
 other states
 
-5 CONCLUSION
+## 4 CONCLUSION
 The models produced in this paper are a simplification of a complex
 system that collides thermodynamics, human behavior, and eco-
 nomics. With that said, the model produces results that are mostly
@@ -207,6 +209,7 @@ intuitive and support the underlying real-world data that went into
 parameter tuning. We have seen that temperature, both internal
 and external, has a dramatic effect on the state distributions of the
 thermal systems.
+
 Two additional takeaways are the occupation numbers for heat
 pumps and fossil systems are consistent across values of 𝑇𝑎 and 𝑇𝑖 ,
 and that heat pumps are approximately 2 to 5 times more likely to
@@ -228,6 +231,7 @@ S[1,1], demonstrate that a fossil system is running for approximately
 a peak event does not make up 30 percent of the winter hours,
 this back of the envelope assessment points to net carbon savings
 achievable in the short term.
+
 Furthermore, the economics of operating a heat pump reflect
 that it should not be run as aggressively for temperatures below a
 particular setpoint relative to natural gas. This analysis considered
@@ -235,6 +239,7 @@ binary values to assess system operations. If a continuous operation
 scale were considered, we would likely see lower heat pump output
 as values for 𝑇𝑎 decline and the thermal load provided by fossil
 fueled systems increases.
+
 There is ample space for future work to push this model forward.
 Incorporating building weatherization and the impact of novel
 phase-change thermal storage technologies are natural extensions.
