@@ -53,12 +53,19 @@ and off, or transitioning between different indoor air temperature,
 the probabilities of state transitions.
 The following four equations outline the thermal states $𝑆[𝐻,𝐹,𝑇_𝑖]$
 
-S\_0,0,T_i =& S\_1,0,T_i\_-C\_adj + S\_0,1,T_i\_-C\_adj - S\_0,0,T_i(\_+\& + \_-)H\_adj - S\_0,0,T_iL + S\_0,0,T\_i+1L
+S\_0,0,T_i =& S\_1,0,T_i\_-C\_adj + S\_0,1,T_i\_-C\_adj -
+S\_0,0,T_i(\_+  
+& + \_-)H\_adj - S\_0,0,T_iL + S\_0,0,T\_i+1L
 
-S\_1,0,T_i =& S\_0,0,T_i\_+H\_adj + S\_1,1,T_i\_-C\_adj - S\_1,0,T_i(\_-C\_adj + \_+H\_adj) - S\_1,0,T_iF\_+ + S\_1,0,T\_i-1F\_+
+S\_1,0,T_i =& S\_0,0,T_i\_+H\_adj + S\_1,1,T_i\_-C\_adj -
+S\_1,0,T_i(\_-C\_adj  
+& + \_+H\_adj) - S\_1,0,T_iF\_+ + S\_1,0,T\_i-1F\_+
 
-S\_0,1,T_i =& S\_1,1,T_i\_-C\_adj + S\_0,0,T_i\_+H\_adj - S\_0,1,T_i(\_+H\_adj + \_-C\_adj) - S\_0,1,T_iH\_+ + S\_0,1,T\_i-1H\_+
+S\_0,1,T_i =& S\_1,1,T_i\_-C\_adj + S\_0,0,T_i\_+H\_adj -
+S\_0,1,T_i(\_+H\_adj  
+& + \_-C\_adj) - S\_0,1,T_iH\_+ + S\_0,1,T\_i-1H\_+
 
-S\_1,1,T_i =& S\_1,0,T_iH\_adj + S\_0,1,T_i\_+H\_adj - S\_1,1,T_i(\_-\ + \_-)C\_adj - S\_1,1,T_i+ S\_1,1,T\_i-1
+S\_1,1,T_i =& S\_1,0,T_iH\_adj + S\_0,1,T_i\_+H\_adj - S\_1,1,T_i(\_-  
+& + \_-)C\_adj - S\_1,1,T_i+ S\_1,1,T\_i-1
 
 
