@@ -120,7 +120,7 @@ master equations, the underlying parameters, and ultimately their
 effect on state and temperature distributions through time and upon
 reaching a steady state.
 
-![teaser](images/5Cresponse.png)
+![5C_resp](images/5Cresponse.png)
 
 ### 3.1 Time: 𝑡
 In Figure 4 we hold𝑇𝑎 fixed at −10◦𝐶 and establish a desired setpoint
@@ -146,7 +146,7 @@ increase in 𝑆 [0, 0]. This is an expected transition as 𝑇𝑖 approaches
 and fossil systems remain relatively stable across this transition in
 temperature (𝑇𝑖 ) through time.
 
-![teaser](images/TaDist.png)
+![Ta_dist](images/TaDist.png)
 
 In the bottom section of Figure4 (C and D) a much more stable
 pattern is observed. In the early hours, the state occupation num-
