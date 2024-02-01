@@ -53,27 +53,19 @@ and off, or transitioning between different indoor air temperature,
 the probabilities of state transitions.
 The following four equations outline the thermal states $𝑆[𝐻,𝐹,𝑇_𝑖]$
 
-    \begin{align}
-        \begin{split}\label{eq:1}
-            %%% S00t
-            \frac{d}{d\tau} S_{0,0,T_i} ={}& S_{1,0,T_i}\phi_{-}C_{adj} + S_{0,1,T_i}\alpha_{-}C_{adj} - S_{0,0,T_i}(\phi_{+} \\ 
-            & + \alpha_{-})H_{adj} - S_{0,0,T_i}L + S_{0,0,T_{i+1}}L
-        \end{split}\\
-        \begin{split}\label{eq:2}
-            %%% S10t
-            \frac{d}{d\tau} S_{1,0,T_i} ={}& S_{0,0,T_i}\phi_{+}H_{adj} + S_{1,1,T_i}\gamma_{-}C_{adj} - S_{1,0,T_i}(\phi_{-}C_{adj} \\ 
-            & + \gamma_{+}H_{adj}) - S_{1,0,T_i}F_+ + S_{1,0,T_{i-1}}F_+
-        \end{split}\\
-        \begin{split}\label{eq:3}
-            %%% S01T
-            \frac{d}{d\tau} S_{0,1,T_i} ={}& S_{1,1,T_i}\beta_{-}C_{adj} + S_{0,0,T_i}\alpha_{+}H_{adj} - S_{0,1,T_i}(\beta_{+}H_{adj} \\ 
-            & + \alpha_{-}C_{adj}) - S_{0,1,T_i}H_+ + S_{0,1,T_{i-1}}H_+ 
-            \end{split}\\
-        \begin{split}\label{eq:4}
-            %%% S11T
-            \frac{d}{d\tau} S_{1,1,T_i} ={}& S_{1,0,T_i}\gamma{+}H_{adj} + S_{0,1,T_i}\beta_{+}H_{adj} - S_{1,1,T_i}(\gamma_{-} \\
-            & + \beta_{-})C_{adj} - S_{1,1,T_i}\Omega + S_{1,1,T_{i-1}}\Omega 
-        \end{split}
-    \end{align}
+S\_0,0,T_i =& S\_1,0,T_i\_-C\_adj + S\_0,1,T_i\_-C\_adj -
+S\_0,0,T_i(\_+\
+& + \_-)H\_adj - S\_0,0,T_iL + S\_0,0,T\_i+1L
+
+S\_1,0,T_i =& S\_0,0,T_i\_+H\_adj + S\_1,1,T_i\_-C\_adj -
+S\_1,0,T_i(\_-C\_adj\
+& + \_+H\_adj) - S\_1,0,T_iF\_+ + S\_1,0,T\_i-1F\_+
+
+S\_0,1,T_i =& S\_1,1,T_i\_-C\_adj + S\_0,0,T_i\_+H\_adj -
+S\_0,1,T_i(\_+H\_adj\
+& + \_-C\_adj) - S\_0,1,T_iH\_+ + S\_0,1,T\_i-1H\_+
+
+S\_1,1,T_i =& S\_1,0,T_iH\_adj + S\_0,1,T_i\_+H\_adj - S\_1,1,T_i(\_-\
+& + \_-)C\_adj - S\_1,1,T_i+ S\_1,1,T\_i-1
 
 
