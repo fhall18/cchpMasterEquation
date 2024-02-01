@@ -6,7 +6,7 @@ Master equations applied to thermal energy systems
 
 The pathway for decarbonizing the thermal energy sector is challenging and will lean heavily on electric heat pump technologies. It is also founded on the need to to reduce carbon emissions, but does not grant consideration to economic or infrastructure limitations. An elegant solution to alleviate these barriers is to enable demand flexibility, often referred to as flexible load management (FLM). This is the process of providing energy consuming devices (loads) connected to the electric grid with the ability to respond in real-time to better manage regional demand for electricity. Heat pumps are a prime candidate for leveraging FLM to lower operational costs while mitigating the need for system upgrades. This paper proposes a thermal state model using differential master equations to understand the system dynamics and state equilibria under real-world conditions. This model provides a foundation for understanding state distributions to better assess FLM practices.
 
-## INTRODUCTION
+## 1. INTRODUCTION
 We are in a looming climate catastrophe.1 Rapidly electrifying how we condition our homes2 is required to displace significant amounts of greenhouse gas emissions. Consequently, this will grow demand on the electric grid that is highly correlated with extreme weather events. Flexibility can be used to reduce peak demand for electricity and provide valuable grid services. This can lead to a more efficient electric grid and allow for greater amounts of distributed renewable
 energy to tie into the distribution and transmission systems. For the short term (5-10 years), many buildings that install heat
 pumps will continue to jointly operate legacy fossil fueled thermal systems (boilers and furnaces) until these legacy systems reach their
@@ -24,7 +24,7 @@ model based on master equations to better understand the operational states of h
 a closed loop building envelope. This understanding sheds light on the potential for FLM across households and the benefit of building
 weatherization to increase thermal resiliency.
 
-## MODEL
+## 2. MODEL
 Master Equations are a powerful tool for understanding the dynam-
 ics of a system. Developing a thermal model with this foundation
 has provided a better understanding for the distribution of electric-
@@ -40,3 +40,17 @@ thermal loss of the building envelope and efficiency of the heating
 systems. Heat pump technologies, though becoming increasingly
 adept at handling colder temperatures, see considerable reductions
 in performance as temperatures drop.
+
+![model_figure](images/thermal_transitions_fig.png)
+
+### 2.1 Master Equations
+These four differential Master Equations allow us to track the distri-
+bution of state probabilities through time and across temperature
+(𝑇𝑖 and 𝑇𝑎 ). Figure 2 is a visual representation of these equations and
+illustrates how states can transition by turning thermal systems on
+and off, or transitioning between different indoor air temperature,
+𝑇𝑖 . Additional equations, defined in 3.2 and 3.3, feed into and guide
+the probabilities of state transitions.
+The following four equations outline the thermal states $𝑆[𝐻,𝐹,𝑇_𝑖]$
+
+
